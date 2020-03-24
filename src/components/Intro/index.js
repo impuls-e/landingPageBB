@@ -26,15 +26,14 @@ const BackgroundSection = ({ className }) => (
 					fluid={imageData}
 				>
 					<div className="intro-content">
-						<h2 className="intro-title">
-							Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos
-						</h2>
+						<h1>Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos</h1>
 						<p>Sem Grampos, Sem Cola, Sem Danos ❤️</p>
-						<a href="/">
-							{" "}
-							<button>Escolher Aplique! </button>{" "}
-						</a>
 					</div>
+
+					<a href="/">
+						{" "}
+						<button>ESCOLHER APLIQUE! </button>{" "}
+					</a>
 				</BackgroundImage>
 			)
 		}}
