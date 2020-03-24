@@ -1,9 +1,8 @@
 .intro {
 	text-align: center;
-	margin-top: -10px;
 }
 
-.intro-background {
+.intro-desktop-background {
 	padding-top: 300px;
 	padding-bottom: 200px;
 }
@@ -22,18 +21,44 @@
 	line-height: 1.2;
 }
 
-.intro-background p {
+.intro-desktop-background p {
 	color: #fff;
 	font-weight: 400;
 	font-size: 30px;
 }
 
-.intro-background a button {
+.intro-desktop-background a button {
 	background-color: #fff;
 	color: #000;
-	font-family: Raleway;
 	font-size: 20px;
 	letter-spacing: 1px;
 	border: none;
 	padding: 15px;
+}
+
+.intro-mobile-gif {
+	background-image: url(../../images/intro.gif);
+	background-position: 50% 50%;
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	padding-bottom: 300px;
+	padding-top: 0px;
+}
+
+.intro-mobile-content {
+	background-color: #f4f2ee;
+}
+
+.intro-mobile-content h1 {
+	color: black;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+.intro-mobile-content p {
+	color: black;
 }

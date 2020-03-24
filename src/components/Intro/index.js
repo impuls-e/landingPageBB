@@ -1,9 +1,12 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import introGif from "../../images/intro.gif"
 import "./styles.css"
 
-const BackgroundSection = ({ className }) => (
+import { isMobile } from "react-device-detect"
+
+const MobileBackgroundSection = ({ className }) => (
 	<StaticQuery
 		query={graphql`
 			query {
@@ -22,7 +25,7 @@ const BackgroundSection = ({ className }) => (
 			return (
 				<BackgroundImage
 					Tag="section"
-					className={`intro-background`}
+					className={`intro-desktop-background`}
 					fluid={imageData}
 				>
 					<div className="intro-content">
@@ -40,10 +43,25 @@ const BackgroundSection = ({ className }) => (
 	/>
 )
 
+const DesktopBackgroundSection = () => (
+	<>
+		<div className="intro-mobile-gif"></div>
+		<div className="intro-mobile-content">
+			<h1>Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos</h1>
+			<p>Sem Grampos, Sem Cola, Sem Danos</p>
+
+			<a href="/">
+				{" "}
+				<button>ESCOLHER APLIQUE! </button>{" "}
+			</a>
+		</div>
+	</>
+)
+
 export default function Intro({ className }) {
 	return (
 		<div className="intro">
-			<BackgroundSection />
+			{isMobile ? <DesktopBackgroundSection /> : <MobileBackgroundSection />}
 		</div>
 	)
 }
