@@ -31,12 +31,12 @@ const MobileBackgroundSection = ({ className }) => (
 					<div className="intro-content">
 						<h1>Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos</h1>
 						<p>Sem Grampos, Sem Cola, Sem Danos ❤️</p>
-					</div>
 
-					<a href="/">
-						{" "}
-						<button>ESCOLHER APLIQUE! </button>{" "}
-					</a>
+						<a href="/">
+							{" "}
+							<button>ESCOLHER APLIQUE! </button>{" "}
+						</a>
+					</div>
 				</BackgroundImage>
 			)
 		}}
@@ -47,12 +47,13 @@ const DesktopBackgroundSection = () => (
 	<>
 		<div className="intro-mobile-gif"></div>
 		<div className="intro-mobile-content">
-			<h1>Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos</h1>
-			<p>Sem Grampos, Sem Cola, Sem Danos</p>
+			<h1>
+				Descubra Como Ter Cabelos Longos e Volumosos Em Menos De 30 Segundos
+			</h1>
+			<h3>Sem Grampos, Sem Cola, Sem Danos</h3>
 
 			<a href="/">
-				{" "}
-				<button>ESCOLHER APLIQUE! </button>{" "}
+				<span>ESCOLHER APLIQUE!</span>{" "}
 			</a>
 		</div>
 	</>
