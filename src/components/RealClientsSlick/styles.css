@@ -1,7 +1,7 @@
 .item {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 0;
+	padding: 15px 15px;
 }
 .item h4 {
 	color: #000;

@@ -56,32 +56,33 @@ export default function Header() {
 							/>
 						</button>
 					</div>
-					<Link className="logo" to="/">
+					<a href="https://www.belabelinda.com" className="logo">
 						<Img
 							fluid={data.image.childImageSharp.fluid}
 							alt="Logo da Bela Belinda"
 						/>
-					</Link>
+					</a>
 					<ul className="menu">
 						<li>
-							<Link to="/">Produtos</Link>
+							<a href="https://www.belabelinda.com/collections">Produtos</a>
 						</li>
 						<li>
-							<Link to="/technologies">Sobre Nós</Link>
+							<a href="https://www.belabelinda.com/pages/sobre-nos">
+								Sobre Nós
+							</a>
 						</li>
 						<li>
-							<Link to="/experiences">Perguntas Frequentes</Link>
+							<a href="https://www.belabelinda.com/#faq">
+								Perguntas Frequentes
+							</a>
 						</li>
 						<li>
-							<Link to="/projects">Blog</Link>
-						</li>
-						<li>
-							<Link to="/projects">Rastreio</Link>
+							<a href="https://www.belabelinda.com/blogs/belabelinda">Blog</a>
 						</li>
 					</ul>
 					<div className="lastcolumn">
 						<div className="login-desktop">
-							<Link to="/">Entrar</Link>
+							<a href="https://www.belabelinda.com/account/login">Entrar</a>
 							<select
 								class="currency-picker"
 								name="currencies"
@@ -117,13 +118,14 @@ export default function Header() {
 				</div>
 				<div className={`aside ${clickStyle}`}>
 					<div className="aside-menu">
-						<Link to="/">Produtos</Link>
-						<Link to="/">Sobre Nós</Link>
-						<Link to="/">Perguntas Frequentes</Link>
-						<Link to="/">Blog</Link>
-						<Link to="/">Rastreio</Link>
+						<a href="https://www.belabelinda.com/collections">Produtos</a>
+						<a href="https://www.belabelinda.com/pages/sobre-nos">
+							Sobre Nós
+						</a>{" "}
+						<a href="https://www.belabelinda.com/#faq">Perguntas Frequentes</a>{" "}
+						<a href="https://www.belabelinda.com/blogs/belabelinda">Blog</a>
 						<div className="login">
-							<Link to="/">Entrar</Link>
+							<a href="https://www.belabelinda.com/account/login">Entrar</a>
 							<select
 								class="currency-picker"
 								name="currencies"
