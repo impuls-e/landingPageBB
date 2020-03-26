@@ -1,0 +1,30 @@
+.recomendations {
+	display: flex;
+	flex-direction: column;
+	background-color: #fed7d7;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	height: 33vw;
+	max-height: 177px;
+}
+.recomendations h3 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 0 17px;
+	word-break: break-word;
+	text-align: center;
+}
+.recomendations .gatsby-image-wrapper {
+	width: 100%;
+	max-width: 654px;
+}
+.recomendations .gatsby-image-wrapper img {
+	object-fit: contain !important;
+}
+@media (min-width: 768px) {
+	.recomendations h3 {
+		font-size: 20px;
+	}
+}
