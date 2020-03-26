@@ -5,6 +5,7 @@ import SEO from "../components/Seo"
 import Intro from "../components/Intro"
 import Recomendations from "../components/Recomendations"
 import WhatIs from "../components/WhatIs"
+import Transformation from "../components/Transformation"
 
 const IndexPage = () => (
 	<Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
 		<Intro />
 		<Recomendations />
 		<WhatIs />
+		<Transformation />
 	</Layout>
 )
 
