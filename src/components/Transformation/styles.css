@@ -1,0 +1,38 @@
+.transformation {
+	display: flex;
+	flex-direction: column;
+	background-color: #fed7d7;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+}
+.transformation h2 {
+	font-family: "Poppins", sans-serif;
+	color: #000;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 27px;
+	margin: 24.9px 0 0;
+	word-break: break-word;
+	text-align: center;
+}
+.transformation p {
+	font-family: "Raleway", sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 19.2px;
+	margin: 5px 0 19.2px;
+	word-break: break-word;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.transformation h2 {
+		font-family: "Raleway", sans-serif;
+		font-weight: 500;
+	}
+	.transformation {
+		min-height: 101px;
+	}
+}
