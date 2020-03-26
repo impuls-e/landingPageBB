@@ -1,0 +1,45 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0;
+}
+.item h4 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21.6px;
+	margin: 0 0 7.5px;
+	word-break: break-word;
+	text-align: center;
+}
+.item p {
+	font-family: "Poppins", sans-serif;
+	color: #000;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 27px;
+	margin: 0 0 20px;
+	word-break: break-word;
+}
+@media (min-width: 768px) {
+	.item {
+		display: flex;
+		flex-direction: column;
+		max-width: 33.33333%;
+		flex-basis: 33.33333%;
+		padding: 15px 14px;
+		box-sizing: border-box;
+	}
+	.item h4 {
+		text-align: left;
+	}
+	.item p {
+		font-family: "Raleway", sans-serif;
+		color: #000;
+		font-size: 18px;
+		font-style: italic;
+		line-height: 27px;
+		margin: 0 0 20px;
+		word-break: break-word;
+	}
+}
