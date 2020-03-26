@@ -8,6 +8,9 @@ html {
 body {
 	margin: 0;
 }
+main {
+	background-color: #f5f3ef;
+}
 .layout {
 	background-color: #1b85a8;
 	flex: 1;
