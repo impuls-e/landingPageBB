@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap");
 
+:root {
+	--main-pink: #fed7d7;
+	--main-gray: #f5f3ef;
+}
+
 html {
 	font-size: 20px;
 	font-family: "Raleway", sans-serif;
