@@ -13,9 +13,9 @@ export default function HowToUse() {
 						width="1140"
 						height="641"
 						src="https://www.youtube.com/embed/zXxXoqp9PBY"
-						frameborder="0"
+						frameBorder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
+						allowfullscreen="allowfullscreen"
 					></iframe>
 				</div>
 			</div>

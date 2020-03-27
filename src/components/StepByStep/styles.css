@@ -1,0 +1,33 @@
+.step-by-step {
+	background: var(--main-gray);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.step-by-step {
+		flex-direction: column;
+	}
+}
+
+.step-by-step .step-text h3 {
+	color: #000;
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 0px;
+	text-align: left;
+	margin-top: 24.9px;
+}
+
+.step-by-step .step-text p {
+	color: #000;
+	text-align: left;
+	font-family: Raleway;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 20px;
+}

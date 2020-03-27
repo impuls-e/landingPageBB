@@ -8,6 +8,7 @@ import WhatIs from "../components/WhatIs"
 import Transformation from "../components/Transformation"
 import RealClients from "../components/RealClients"
 import HowToUse from "../components/HowToUse"
+import StepByStep from "../components/StepByStep"
 
 const IndexPage = () => (
 	<Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
 		<Transformation />
 		<RealClients />
 		<HowToUse />
+		<StepByStep />
 	</Layout>
 )
 
