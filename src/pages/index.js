@@ -9,6 +9,7 @@ import Transformation from "../components/Transformation"
 import RealClients from "../components/RealClients"
 import HowToUse from "../components/HowToUse"
 import StepByStep from "../components/StepByStep"
+import Famous from "../components/Famous"
 
 const IndexPage = () => (
 	<Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
 		<RealClients />
 		<HowToUse />
 		<StepByStep />
+		<Famous />
 	</Layout>
 )
 
