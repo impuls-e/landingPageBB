@@ -1,0 +1,67 @@
+.famous {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: stretch;
+}
+.famous h3 {
+	padding: 15px 15px;
+	margin: 0;
+	text-align: center;
+	color: #000;
+	font-weight: 500;
+	font-size: 22px;
+	width: 100%;
+}
+.famous .item {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 15px;
+	align-items: center;
+}
+.famous .item:nth-child(4) h4 {
+	opacity: 0;
+}
+.famous .item:nth-child(3) h4 {
+	opacity: 0;
+}
+.famous .item:nth-child(2) h4 {
+	opacity: 0;
+}
+.famous .item p {
+	font-family: "Poppins", sans-serif;
+	color: #000;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 27px;
+	margin: 0 0 20px;
+	word-break: break-word;
+	text-align: center;
+}
+.famous .button {
+	margin: 0 15px;
+}
+@media (min-width: 768px) {
+	.famous {
+		flex-direction: row;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+	.famous .item {
+		display: flex;
+		flex-direction: column;
+		max-width: 33.33333%;
+		flex-basis: 33.33333%;
+		padding: 15px 14px;
+		box-sizing: border-box;
+	}
+	.famous .item p {
+		color: #000;
+		font-size: 18px;
+		font-style: italic;
+		line-height: 27px;
+		margin: 0 0 20px;
+		word-break: break-word;
+	}
+}
