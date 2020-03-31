@@ -1,53 +1,35 @@
 .how-to-use {
-	background: var(--main-pink);
-	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 0px;
+  background: var(--main-pink);
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .htu-wrap {
-	max-width: 1140px;
-	width: 100%;
-	margin: auto;
-	padding: 15px 0;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 0;
 }
 
 .how-to-use h3 {
-	color: #000;
-	font-weight: 500;
-	font-size: 22px;
-	margin-bottom: 0px;
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {
-	.how-to-use h3 {
-		font-weight: 600;
-	}
+  .how-to-use h3 {
+    font-weight: 600;
+  }
 }
 
 .how-to-use h4 {
-	color: #000;
-	margin-bottom: 24.9px;
-	font-family: Raleway;
-	font-weight: 500;
-	font-size: 17px;
-	margin-top: 5px;
-}
-
-.iframe-container {
-	margin: auto;
-	z-index: 1;
-	position: relative;
-	padding-bottom: 56.25%;
-	display: block;
-	overflow: hidden;
-}
-.iframe-container iframe {
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 5;
-	position: absolute;
+  color: #000;
+  margin-bottom: 24.9px;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 5px;
 }
