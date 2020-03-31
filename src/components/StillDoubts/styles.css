@@ -1,0 +1,62 @@
+.stillDoubt {
+  background: var(--main-pink);
+}
+
+.stillDoubt h3 {
+  color: #000;
+  margin-top: 24.9px;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.stillDoubt p {
+  color: #000;
+  margin-bottom: 24.9px;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.stillDoubt .first-content,
+.stillDoubt .second-content,
+.stillDoubt .third-content {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stillDoubt .second-content .iframe-container + .iframe-container {
+  margin-left: 15px;
+}
+
+.stillDoubt .third-content div {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .stillDoubt h3 {
+    font-family: Poppins;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .stillDoubt .first-content,
+  .stillDoubt .second-content,
+  .stillDoubt .third-content {
+    flex-direction: column;
+  }
+
+  .stillDoubt .second-content .iframe-container {
+    margin-bottom: 30px;
+  }
+}
