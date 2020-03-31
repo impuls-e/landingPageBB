@@ -62,7 +62,7 @@ export default function StillDoubts() {
         </div>
       </div>
       <div className="third-content">
-        <div>
+        <div className="teste1">
           <h3>Veja o Quadro Comparativo:</h3>
           <p>
             Por nāo causar danos, nāo precisar de manutençāo ou de cabeleireiro e ser mais acessível
@@ -70,7 +70,9 @@ export default function StillDoubts() {
             tipos de aplique.
           </p>
         </div>
-        <Img fluid={data.image.childImageSharp.fluid} alt="Logo da Bela Belinda" />
+        <div className="teste2">
+          <Img fluid={data.image.childImageSharp.fluid} alt="Logo da Bela Belinda" />
+        </div>
       </div>
     </section>
   );
