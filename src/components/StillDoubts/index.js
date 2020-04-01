@@ -44,7 +44,7 @@ export default function StillDoubts() {
 	`)
 
 	return (
-		<section class="container stillDoubt">
+		<section className="container stillDoubt">
 			<div className="first-content">
 				<div className="first-content-description">
 					<h3>Ainda se convencendo?</h3>
