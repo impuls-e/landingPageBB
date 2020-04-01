@@ -9,7 +9,7 @@ export default function Header() {
 		query imgPag {
 			image: file(relativePath: { eq: "pag-brasil.png" }) {
 				childImageSharp {
-					fluid {
+					fluid(maxWidth: 359) {
 						...GatsbyImageSharpFluid
 					}
 				}
@@ -20,10 +20,12 @@ export default function Header() {
 	return (
 		<>
 			<div className="container guarantee">
-				<Img
-					fluid={data.image.childImageSharp.fluid}
-					alt="Logo da Bela Belinda"
-				/>
+				<div className="image">
+					<Img
+						fluid={data.image.childImageSharp.fluid}
+						alt="Logo da Bela Belinda"
+					/>
+				</div>
 				<aside>
 					<h3>
 						GARANTIA COMPLETA: Se você nāo AMAR ou a cor nāo bater, nós trocamos

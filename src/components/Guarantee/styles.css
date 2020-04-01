@@ -3,7 +3,7 @@
 	flex-direction: column;
 	padding: 15px 0;
 }
-.guarantee .gatsby-image-wrapper {
+.guarantee .image {
 	margin: 15px;
 }
 .guarantee aside {
@@ -30,4 +30,18 @@
 	font-weight: 700;
 }
 @media (min-width: 768px) {
+	.guarantee {
+		flex-direction: row;
+	}
+	.guarantee .image {
+		width: 50%;
+	}
+	.guarantee .image .gatsby-image-wrapper {
+		max-width: 359px;
+		margin: 0 auto;
+	}
+	.guarantee aside {
+		width: 50%;
+		max-width: 561px;
+	}
 }
