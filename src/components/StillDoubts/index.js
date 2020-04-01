@@ -7,12 +7,12 @@ export default function StillDoubts() {
 	const [showVideo, setShowVideo] = useState(false)
 
 	const container = createRef()
-	const videoObserver = new IntersectionObserver(onVideoIntersection, {
-		rootMargin: '100px 0px',
-		threshold: 0.25,
-	})
 
 	useEffect(() => {
+		const videoObserver = new IntersectionObserver(onVideoIntersection, {
+			rootMargin: '100px 0px',
+			threshold: 0.25,
+		})
 		if (window && 'IntersectionObserver' in window) {
 			if (container && container.current) {
 				videoObserver.observe(container.current)
