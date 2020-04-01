@@ -4,6 +4,8 @@ import BackgroundImage from "gatsby-background-image"
 import introGif from "../../images/intro.gif"
 import "./styles.css"
 
+import video from '../../images/intro.webm'
+
 import { isMobile } from "react-device-detect"
 
 const MobileBackgroundSection = ({ className }) => (
@@ -45,7 +47,11 @@ const MobileBackgroundSection = ({ className }) => (
 
 const DesktopBackgroundSection = () => (
 	<>
-		<div className="intro-mobile-gif"></div>
+		{/* <div className="intro-mobile-gif"></div> */}
+		<video className="teste" autoPlay muted loop >
+			<source autoPlay src={video}
+				type='video/webm;codecs="vp8, vorbis"' />
+		</video>
 		<div className="intro-mobile-content">
 			<h1>
 				Descubra Como Ter Cabelos Longos e Volumosos Em Menos De 30 Segundos
