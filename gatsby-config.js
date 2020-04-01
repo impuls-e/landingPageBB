@@ -5,7 +5,7 @@ module.exports = {
 		title: 'Bela Belinda',
 		titleTemplate: 'Bela Belinda Apliques - %s',
 		description:
-			'Além de cabelos perfeitos, nossa missāo é inspirar confiança e te transformar na melhor versāo de você mesma. Nossas clientes estāo no centro de tudo que fazemos.',
+			'Além de cabelos perfeitos, nossa missāo é inspirar confiança e te transformar na melhor versāo de você mesma.',
 		url: 'https://belabelinda.netlify.com/',
 		siteUrl: 'https://belabelinda.netlify.com/', // No trailing slash allowed!
 		image: `${__dirname}/src/images/logo-belabelinda.png`,

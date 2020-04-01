@@ -20,8 +20,6 @@ export default function StillDoubts() {
 		} else {
 			setShowVideo(true)
 		}
-
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [container])
 	function onVideoIntersection(entries) {
 		if (!entries || entries.length <= 0) {
