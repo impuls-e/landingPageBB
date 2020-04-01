@@ -1,12 +1,12 @@
-import React from "react"
-import "./styles.css"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import './styles.css'
+import Img from 'gatsby-image'
+import { useStaticQuery, graphql } from 'gatsby'
 
 export default function Recomendations() {
 	const data = useStaticQuery(graphql`
 		query ImgRecomendations {
-			image: file(relativePath: { eq: "recomendations.png" }) {
+			image: file(relativePath: { eq: "recomendations.webp" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid

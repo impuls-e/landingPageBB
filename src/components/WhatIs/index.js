@@ -1,12 +1,12 @@
-import React from "react"
-import "./styles.css"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
-import Button from "../Button"
+import React from 'react'
+import './styles.css'
+import Img from 'gatsby-image'
+import { useStaticQuery, graphql } from 'gatsby'
+import Button from '../Button'
 export default function WhatIs() {
 	const data = useStaticQuery(graphql`
 		query ImgWhatIs {
-			image: file(relativePath: { eq: "whatis.png" }) {
+			image: file(relativePath: { eq: "whatis.webp" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid

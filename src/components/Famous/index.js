@@ -1,9 +1,9 @@
-import React from "react"
-import "./styles.css"
-import { useStaticQuery, graphql } from "gatsby"
-import Button from "../Button"
+import React from 'react'
+import './styles.css'
+import { useStaticQuery, graphql } from 'gatsby'
+import Button from '../Button'
 
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 export default function Famous() {
 	const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ export default function Famous() {
 							text
 							imgUrl {
 								childImageSharp {
-									fixed(height: 200) {
+									fixed(height: 190) {
 										...GatsbyImageSharpFixed
 									}
 								}
