@@ -55,7 +55,7 @@ const DesktopBackgroundSection = () => (
 			</h1>
 			<h3>Sem Grampos, Sem Cola, Sem Danos</h3>
 
-			<a href="/">
+			<a href="https://belabelinda.com/collections/frontpage">
 				<span>ESCOLHER APLIQUE!</span>{' '}
 			</a>
 		</div>
