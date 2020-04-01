@@ -1,30 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
 
 :root {
-  --main-pink: #fed7d7;
-  --main-gray: #f5f3ef;
+	--main-pink: #fed7d7;
+	--main-gray: #f5f3ef;
 }
 
 html {
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
 }
 body {
-  margin: 0;
+	margin: 0;
 }
 main {
-  background-color: #f5f3ef;
+	background-color: #f5f3ef;
 }
 .layout {
-  background-color: #1b85a8;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	background-color: #1b85a8;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .layout canvas {
-  position: fixed;
+	position: fixed;
 }
 .layout,
 h1,
@@ -33,61 +33,64 @@ h3,
 h4,
 a,
 p {
-  color: #fff;
+	color: #fff;
 }
 .layout h1 {
-  font-size: 1.6rem;
-  font-weight: lighter;
-  letter-spacing: -1.5px;
+	font-size: 1.6rem;
+	font-weight: lighter;
+	letter-spacing: -1.5px;
 }
 
 .layout h2 {
-  font-size: 1.2rem;
-  font-weight: lighter;
-  letter-spacing: -0.5px;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	letter-spacing: -0.5px;
 }
 .layout h3 {
-  font-size: 1.1rem;
-  font-weight: normal;
-  letter-spacing: -0.5px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	letter-spacing: -0.5px;
 }
 .layout p {
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 0.5px;
+	font-size: 1rem;
+	font-weight: normal;
+	letter-spacing: 0.5px;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .container {
-  padding: 24px;
+	padding: 24px;
 }
 
 .iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
 }
 .iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 footer {
-  background-color: #292f35;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: center;
-  color: #fff;
+	background-color: #292f35;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
+	color: #fff;
 }
 @media (min-width: 1240px) {
 	.container {
 		padding: 0 90px !important;
+	}
+	main {
+		margin-top: 20px;
 	}
 }
