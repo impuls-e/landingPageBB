@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import "./styles.css"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import HamburgerMenu from "react-hamburger-menu"
-import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import React, { useState } from 'react'
+import './styles.css'
+import { useStaticQuery, graphql } from 'gatsby'
+import HamburgerMenu from 'react-hamburger-menu'
+import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 
-import { MdEmail } from "react-icons/md"
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
+import { MdEmail } from 'react-icons/md'
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa'
 
 export default function Header() {
 	const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ export default function Header() {
 	const [movClick, setMovClick] = useState(false)
 	const [hamburguer, setHamburguer] = useState(false)
 
-	const clickStyle = movClick ? "click" : ""
+	const clickStyle = movClick ? 'click' : ''
 
 	function handleClick() {
 		setHamburguer(!hamburguer)
@@ -121,8 +121,8 @@ export default function Header() {
 						<a href="https://www.belabelinda.com/collections">Produtos</a>
 						<a href="https://www.belabelinda.com/pages/sobre-nos">
 							Sobre Nós
-						</a>{" "}
-						<a href="https://www.belabelinda.com/#faq">Perguntas Frequentes</a>{" "}
+						</a>{' '}
+						<a href="https://www.belabelinda.com/#faq">Perguntas Frequentes</a>{' '}
 						<a href="https://www.belabelinda.com/blogs/belabelinda">Blog</a>
 						<div className="login">
 							<a href="https://www.belabelinda.com/account/login">Entrar</a>

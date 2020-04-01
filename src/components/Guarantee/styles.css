@@ -1,0 +1,33 @@
+.guarantee {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0;
+}
+.guarantee .gatsby-image-wrapper {
+	margin: 15px;
+}
+.guarantee aside {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.guarantee aside h3 {
+	color: #000;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 26.4px;
+	margin: 24.9px 0 5px 0;
+	text-align: center;
+}
+.guarantee aside p {
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 21.6px;
+	margin: 0 0 21.9px 0;
+}
+.guarantee aside p span {
+	font-weight: 700;
+}
+@media (min-width: 768px) {
+}

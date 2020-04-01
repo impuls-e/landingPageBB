@@ -71,3 +71,8 @@ footer {
 	justify-content: center;
 	color: #fff;
 }
+@media (min-width: 1240px) {
+	.container {
+		padding: 0 90px !important;
+	}
+}
