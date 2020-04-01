@@ -1,8 +1,8 @@
-import React from "react"
-import "./styles.css"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import './styles.css'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 export default function RealClientsSlick() {
 	const data = useStaticQuery(graphql`
