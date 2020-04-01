@@ -1,14 +1,13 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import introGif from '../../images/intro.gif'
 import './styles.css'
 
 import video from '../../images/intro.webm'
 
 import { isMobile } from 'react-device-detect'
 
-const MobileBackgroundSection = ({ className }) => (
+const MobileBackgroundSection = ({}) => (
 	<StaticQuery
 		query={graphql`
 			query {
@@ -47,7 +46,6 @@ const MobileBackgroundSection = ({ className }) => (
 
 const DesktopBackgroundSection = () => (
 	<>
-		{/* <div className="intro-mobile-gif"></div> */}
 		<video className="teste" autoPlay muted loop>
 			<source autoPlay src={video} type='video/webm;codecs="vp8, vorbis"' />
 		</video>
@@ -64,7 +62,7 @@ const DesktopBackgroundSection = () => (
 	</>
 )
 
-export default function Intro({ className }) {
+export default function Intro({}) {
 	return (
 		<div className="intro">
 			{isMobile ? <DesktopBackgroundSection /> : <MobileBackgroundSection />}

@@ -1,60 +1,48 @@
 .teste {
-  width: 100%;
+	width: 100%;
 }
 
 .intro {
-  text-align: center;
+	text-align: center;
 }
 
 .intro-desktop-background {
-  height: 95vh;
-  display: flex;
+	height: 95vh;
+	display: flex;
 }
 
 .intro-content {
-  display: flex;
-  flex-direction: column;
-  margin: auto 40vh;
+	display: flex;
+	flex-direction: column;
+	margin: auto 40vh;
 }
 
 .intro-content h1 {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.2;
+	color: #fff;
+	font-family: Raleway;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.2;
 }
 
 .intro-desktop-background p {
-  margin-top: 0;
-  color: #fff;
-  font-weight: 400;
-  font-size: 21px;
+	margin-top: 0;
+	color: #fff;
+	font-weight: 400;
+	font-size: 21px;
 }
 
 .intro-desktop-background a button {
-  background-color: #fff;
-  color: #000;
-  font-size: 12px;
-  letter-spacing: 1px;
-  border: none;
-  padding: 10px;
-  font-family: Raleway;
-}
-
-.intro-mobile-gif {
-  background-image: url(../../images/intro.gif);
-  background-position: 50% 50%;
-  background-attachment: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  padding-bottom: 300px;
-  padding-top: 0px;
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 1px;
+	border: none;
+	padding: 10px;
+	font-family: Raleway;
 }
 
 .intro-mobile-content {
-<<<<<<< HEAD
 	background-color: #f4f2ee;
 	padding: 30px;
 }
@@ -66,40 +54,29 @@
 	font-weight: 600;
 	line-height: 27px;
 	font-family: 'Poppins', sans-serif;
-=======
-  background-color: #f4f2ee;
-  padding: 30px 40px;
-}
-
-.intro-mobile-content h1 {
-  color: black;
-  margin: 0;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 27px;
-  font-family: "Poppins", sans-serif;
->>>>>>> 0c6be1c13ad801224e5c57fd5cbdc14e30ca7c50
+	background-color: #f4f2ee;
+	padding: 30px 40px;
 }
 
 .intro-mobile-content h3 {
-  margin-top: 0px;
-  margin-bottom: 17px;
-  font-weight: 300;
-  font-size: 16px;
-  color: black;
+	margin-top: 0px;
+	margin-bottom: 17px;
+	font-weight: 300;
+	font-size: 16px;
+	color: black;
 }
 
 .intro-mobile-content a {
-  background-color: #000;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding: 10px;
-  display: block;
+	background-color: #000;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding: 10px;
+	display: block;
 }
 
 .intro-mobile-content a span {
-  font-size: 15px;
+	font-size: 15px;
 }
 @media (min-width: 1200px) {
 	.intro-content {
