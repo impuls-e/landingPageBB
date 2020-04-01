@@ -1,8 +1,16 @@
+const config = require('./data/config')
+
 module.exports = {
 	siteMetadata: {
-		title: `BelaBelinda`,
-		description: `BelaBelinda Description`,
+		title: 'Bela Belinda',
+		titleTemplate: 'Bela Belinda Apliques - %s',
+		description:
+			'Além de cabelos perfeitos, nossa missāo é inspirar confiança e te transformar na melhor versāo de você mesma. Nossas clientes estāo no centro de tudo que fazemos. Como uma melhor amiga, nós nos dedicamos 100% para estar lá para você a todo momento.',
+		url: 'https://belabelinda.netlify.com/',
+		siteUrl: 'https://belabelinda.netlify.com/', // No trailing slash allowed!
+		image: `${__dirname}/src/images/logo-belabelinda.png`,
 		author: `Impulse`,
+		twitterUsername: '@belabelinda',
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -26,38 +34,46 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
-				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
-				icon: `src/images/favicon.webp`, // This path is relative to the root of the site.
-				display: `minimal-ui`, // This path is relative to the root of the site.
+				name: config.siteTitle,
+				short_name: config.siteTitleShort,
+				description: config.siteDescription,
+				start_url: '/',
+				background_color: config.backgroundColor,
+				theme_color: config.themeColor,
+				display: 'standalone',
+				icon: 'src/images/favicon.webp', // This path is relative to the root of the site.
 			},
 		},
-
 		{
-			resolve: 'gatsby-transformer-remark',
+			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				plugins: [
-					{
-						resolve: 'gatsby-remark-embed-video',
-						options: {
-							width: 800,
-							ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-							height: 400, // Optional: Overrides optional.ratio
-							related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-							noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
-							urlOverrides: [
-								{
-									id: 'youtube',
-									embedURL: videoId =>
-										`https://www.youtube-nocookie.com/embed/${videoId}`,
-								},
-							], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
-						},
+				trackingId: 'UA-141117092-15',
+				// this option places the tracking script into the head of the DOM
+				head: true,
+				// other options
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-html-attributes',
+			options: {
+				lang: 'pt-BR',
+			},
+		},
+		`gatsby-plugin-advanced-sitemap`,
+		`gatsby-plugin-extract-schema`,
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://belabelinda.netlify.com/',
+				sitemap: 'https://belabelinda.netlify.com/sitemap.xml',
+				env: {
+					development: {
+						policy: [{ userAgent: '*', disallow: ['/'] }],
 					},
-				],
+					production: {
+						policy: [{ userAgent: '*', allow: '/' }],
+					},
+				},
 			},
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
