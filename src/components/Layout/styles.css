@@ -91,6 +91,7 @@ footer {
 		padding: 0 90px !important;
 	}
 	main {
-		margin-top: 20px;
+		padding-top: 20px;
+		background-color: #f4f2ee;
 	}
 }

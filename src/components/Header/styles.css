@@ -296,6 +296,9 @@ header .frete p:hover {
 	header .frete p {
 		letter-spacing: 2px;
 	}
+	header .frete .social-icons {
+		width: 30%;
+	}
 	header .wrapper .lastcolumn {
 		display: flex;
 	}
