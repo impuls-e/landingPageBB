@@ -101,7 +101,7 @@ export default function Header() {
 							</select>
 						</div>
 						<div className="carrinho">
-							<a href="/cart" class="cart">
+							<a href="https://belabelinda.com/cart" class="cart">
 								<svg
 									aria-hidden="true"
 									focusable="false"

@@ -30,6 +30,10 @@ const SEO = ({ title, description, image, pathname, article }) => (
 							name="google-site-verification"
 							content="FdK0L5prquMXg4djTcVSAth67wA8GbJCciJs9q5ZBew"
 						/>
+						<meta
+							name="viewport"
+							content="width=device-width, initial-scale=1"
+						></meta>
 						<meta name="description" content={seo.description} />
 						<meta name="image" content={seo.image} />
 						<meta charSet="utf-8" />
@@ -46,7 +50,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
 						{seo.image && (
 							<meta
 								property="og:image"
-								content="https://cdn.shopify.com/s/files/1/0094/0690/6465/files/belabelindav2_360x.png?v=1557867483"
+								content="https://tidio-images-messenger.s3.amazonaws.com/41e9c66a36b17a9d91a7e980e2ff12ef.jpeg"
 							/>
 						)}
 

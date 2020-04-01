@@ -5,7 +5,7 @@ module.exports = {
 		title: 'Bela Belinda',
 		titleTemplate: 'Bela Belinda Apliques - %s',
 		description:
-			'Além de cabelos perfeitos, nossa missāo é inspirar confiança e te transformar na melhor versāo de você mesma. Nossas clientes estāo no centro de tudo que fazemos. Como uma melhor amiga, nós nos dedicamos 100% para estar lá para você a todo momento.',
+			'Além de cabelos perfeitos, nossa missāo é inspirar confiança e te transformar na melhor versāo de você mesma. Nossas clientes estāo no centro de tudo que fazemos.',
 		url: 'https://belabelinda.netlify.com/',
 		siteUrl: 'https://belabelinda.netlify.com/', // No trailing slash allowed!
 		image: `${__dirname}/src/images/logo-belabelinda.png`,
@@ -60,7 +60,13 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-advanced-sitemap`,
-		`gatsby-plugin-extract-schema`,
+		{
+			resolve: "gatsby-plugin-extract-schema",
+				options: {
+					dest: `${__dirname}/path/to/schema.json`,
+				},
+			},
+		},
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
