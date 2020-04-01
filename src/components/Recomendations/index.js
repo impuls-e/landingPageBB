@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 export default function Recomendations() {
 	const data = useStaticQuery(graphql`
 		query ImgRecomendations {
-			image: file(relativePath: { eq: "recomendations.webp" }) {
+			image: file(relativePath: { eq: "recomendations.png" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid

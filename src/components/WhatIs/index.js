@@ -6,7 +6,7 @@ import Button from '../Button'
 export default function WhatIs() {
 	const data = useStaticQuery(graphql`
 		query ImgWhatIs {
-			image: file(relativePath: { eq: "whatis.webp" }) {
+			image: file(relativePath: { eq: "whatis.png" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid
