@@ -1,3 +1,6 @@
+.step {
+	padding: 15px 15px 30px;
+}
 .step-by-step {
 	background: var(--main-gray);
 	display: flex;
@@ -30,4 +33,10 @@
 	font-size: 18px;
 	font-style: italic;
 	margin-top: 20px;
+}
+@media (min-width: 768px) {
+	.step-by-step .item {
+		align-self: center;
+		width: 33%;
+	}
 }

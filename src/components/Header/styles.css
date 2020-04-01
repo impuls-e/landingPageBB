@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 header {
 	display: flex;
@@ -14,7 +14,7 @@ header .wrapper {
 	justify-content: space-between;
 	height: 25.8vw;
 	z-index: 3;
-	padding: 0 10px;
+	padding: 0 7px;
 	background-color: #fff;
 }
 header .wrapper .icon {
@@ -102,7 +102,7 @@ header .aside .aside-menu a {
 	line-height: 1.5;
 	font-weight: 400;
 
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 header .aside .aside-menu .login {
 	display: flex;
@@ -125,7 +125,7 @@ header .frete {
 	height: 26px;
 	display: flex;
 	border-bottom: 1px solid #ebebeb;
-	padding: 5px 0 22px 0;
+	padding: 7px 0 10px;
 	justify-content: center;
 	background-color: #f4f2ee;
 }
@@ -136,7 +136,7 @@ header .frete .email {
 	display: none;
 }
 header .frete p {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 10px;
 	color: #000;
 	letter-spacing: 1px;
@@ -162,7 +162,7 @@ header .frete p:hover {
 	header .wrapper .carrinho .cart span {
 		display: inline;
 		font-size: 22px;
-		font-family: "Poppins", sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color: #000;
 		line-height: 1.5;
 	}
@@ -257,7 +257,7 @@ header .frete p:hover {
 	header .wrapper .menu a {
 		padding: 28px 8px;
 		font-size: 12px;
-		font-family: "Poppins", sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-weight: normal;
 		letter-spacing: 2px;
 		text-transform: none;
@@ -281,7 +281,7 @@ header .frete p:hover {
 	header .wrapper .lastcolumn .login-desktop a {
 		padding: 10px 8px;
 		font-size: 12px;
-		font-family: "Poppins", sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-weight: normal;
 		text-transform: none;
 		display: block;

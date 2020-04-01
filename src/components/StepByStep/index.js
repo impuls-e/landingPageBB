@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Button from "../Button"
-import "./styles.css"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Button from '../Button'
+import './styles.css'
 
 export default function StepByStep() {
 	const data = useStaticQuery(graphql`
@@ -32,9 +32,9 @@ export default function StepByStep() {
 	`)
 
 	return (
-		<div className="container">
-			<div className=" step-by-step">
-				<div>
+		<div className="container step">
+			<div className="step-by-step">
+				<div className="item">
 					<div>
 						<Img fluid={data.step1.childImageSharp.fluid}></Img>
 					</div>
@@ -44,7 +44,7 @@ export default function StepByStep() {
 					</div>
 				</div>
 
-				<div>
+				<div className="item">
 					<div>
 						<Img fluid={data.step2.childImageSharp.fluid}></Img>
 					</div>
@@ -57,9 +57,8 @@ export default function StepByStep() {
 					</div>
 				</div>
 
-				<div>
+				<div className="item">
 					<Img fluid={data.step3.childImageSharp.fluid}></Img>
-
 					<div className="step-text">
 						<h3>3.Tenha Cabelos Perfeitos</h3>
 						<p>

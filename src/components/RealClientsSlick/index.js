@@ -7,7 +7,10 @@ import Img from 'gatsby-image'
 export default function RealClientsSlick() {
 	const data = useStaticQuery(graphql`
 		query ClientQuery {
-			allMdx(filter: { frontmatter: { tag: { eq: "client" } } }) {
+			allMdx(
+				filter: { frontmatter: { tag: { eq: "client" } } }
+				sort: { fields: [frontmatter___order], order: ASC }
+			) {
 				edges {
 					node {
 						frontmatter {

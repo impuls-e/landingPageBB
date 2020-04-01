@@ -1,35 +1,38 @@
 .how-to-use {
-  background: var(--main-pink);
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
+	background: var(--main-pink);
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .htu-wrap {
-  max-width: 1140px;
-  width: 100%;
-  margin: auto;
-  padding: 15px 0;
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+	padding: 15px 0;
 }
 
 .how-to-use h3 {
-  color: #000;
-  font-weight: 500;
-  font-size: 22px;
-  margin-bottom: 0px;
+	line-height: 27px;
+	font-family: Poppins;
+	color: #000;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 0px;
 }
-
-@media (max-width: 768px) {
-  .how-to-use h3 {
-    font-weight: 600;
-  }
-}
-
 .how-to-use h4 {
-  color: #000;
-  margin-bottom: 24.9px;
-  font-family: Raleway;
-  font-weight: 500;
-  font-size: 17px;
-  margin-top: 5px;
+	color: #000;
+	margin-bottom: 24.9px;
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 17px;
+	margin-top: 5px;
+}
+@media (min-width: 768px) {
+	.how-to-use {
+		padding: 0 15px;
+	}
+	.how-to-use h3 {
+		font-weight: 400;
+	}
 }

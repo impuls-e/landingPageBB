@@ -12,14 +12,16 @@
 	flex-direction: column;
 }
 .guarantee aside h3 {
+	font-family: Poppins;
 	color: #000;
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 26.4px;
 	margin: 24.9px 0 5px 0;
 	text-align: center;
 }
 .guarantee aside p {
+	font-family: Poppins;
 	color: #000;
 	font-size: 18px;
 	font-weight: 300;
@@ -43,5 +45,8 @@
 	.guarantee aside {
 		width: 50%;
 		max-width: 561px;
+	}
+	.guarantee aside h3 {
+		text-align: left;
 	}
 }

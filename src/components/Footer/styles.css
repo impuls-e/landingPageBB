@@ -7,6 +7,7 @@
 .footer .button {
 	margin: 30px 15px 60px;
 	width: auto;
+	font-size: 24px;
 }
 .footer .contact {
 	display: flex;
@@ -34,7 +35,7 @@
 	font-family: Poppins;
 	color: #747474;
 	font-size: 17px;
-	line-height: 48px;
+	line-height: 25.5px;
 	text-align: center;
 	font-weight: 600;
 }
@@ -92,7 +93,6 @@
 	letter-spacing: 0.08em;
 	font-size: 15px;
 	border-radius: 0 2px 2px 0;
-	white-space: nowrap;
 }
 .footer .contact .section.last .social-icons {
 	display: flex;
@@ -103,10 +103,10 @@
 	margin: 3px;
 }
 .footer .cred-card {
-	width: 100%;
+	padding: 0 27px;
 }
 .footer .cred-card .gatsby-image-wrapper {
-	width: 50%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -126,11 +126,13 @@
 
 @media (min-width: 768px) {
 	.footer .contact {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		display: flex;
+		flex-direction: row;
 		padding-top: 30px;
 	}
-
+	.footer .contact .section {
+		width: 33%;
+	}
 	.footer .contact .section .gatsby-image-wrapper {
 		width: 50%;
 		margin: 0;
@@ -160,5 +162,18 @@
 	.footer .contact .section.last .social-icons {
 		display: flex;
 		justify-content: left;
+	}
+	.footer .cred-card {
+		width: 80%;
+		padding: 0 24px;
+		margin: 10px auto;
+	}
+}
+@media (min-width: 768px) {
+	.footer .button {
+		margin: 30px 90px 60px;
+	}
+	.footer .contact {
+		padding: 0 90px;
 	}
 }

@@ -57,9 +57,9 @@ export default function StillDoubts() {
 					{showVideo ? (
 						<iframe
 							src="https://www.youtube.com/embed/vDlIaC_79mk"
-							frameborder="0"
+							frameBorder="0"
 							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
+							allowFullScreen
 						/>
 					) : (
 						undefined

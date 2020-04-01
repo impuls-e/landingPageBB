@@ -11,7 +11,7 @@ import { FaFacebookSquare, FaInstagram } from 'react-icons/fa'
 export default function Header() {
 	const data = useStaticQuery(graphql`
 		query ImgHeader {
-			image: file(relativePath: { eq: "logo-belabelinda.png" }) {
+			image: file(relativePath: { eq: "logo-big.png" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid
