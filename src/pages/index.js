@@ -11,6 +11,9 @@ import HowToUse from '../components/HowToUse';
 import StepByStep from '../components/StepByStep';
 import StillDoubts from '../components/StillDoubts';
 import Famous from '../components/Famous';
+import Guarantee from '../components/Guarantee'
+import FrequentQuestions from '../components/FrequentQuestions'
+import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <Layout>
@@ -24,7 +27,9 @@ const IndexPage = () => (
     <StepByStep />
     <StillDoubts />
     <Famous />
+  	<Guarantee />
+		<FrequentQuestions />
+		<Footer />
   </Layout>
 );
-
 export default IndexPage;
