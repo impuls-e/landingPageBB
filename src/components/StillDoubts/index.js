@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { createRef, useState, useEffect } from 'react'
 import './styles.css'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default function StillDoubts() {
+	const [showVideo, setShowVideo] = useState(false)
+
+	const container = createRef()
+	const videoObserver = new IntersectionObserver(onVideoIntersection, {
+		rootMargin: '100px 0px',
+		threshold: 0.25,
+	})
+
+	useEffect(() => {
+		if (window && 'IntersectionObserver' in window) {
+			if (container && container.current) {
+				videoObserver.observe(container.current)
+			}
+		} else {
+			setShowVideo(true)
+		}
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [container])
+	function onVideoIntersection(entries) {
+		if (!entries || entries.length <= 0) {
+			return
+		}
+
+		if (entries[0].isIntersecting) {
+			setShowVideo(true)
+			videoObserver.disconnect()
+		}
+	}
 	const data = useStaticQuery(graphql`
 		query ImgStillDoubt {
 			image: file(relativePath: { eq: "comparativeBoard.webp" }) {
@@ -26,39 +55,55 @@ export default function StillDoubts() {
 						e independente de alguém que já comprou o Aplique BelaBelinda.
 					</p>
 				</div>
-				<div className="iframe-container">
-					<iframe
-						src="https://www.youtube.com/embed/vDlIaC_79mk"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					/>
+				<div className="iframe-container" ref={container}>
+					{showVideo ? (
+						<iframe
+							src="https://www.youtube.com/embed/vDlIaC_79mk"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						/>
+					) : (
+						undefined
+					)}
 				</div>
 			</div>
 			<div className="second-content">
-				<div className="iframe-container">
-					<iframe
-						src="https://www.youtube.com/embed/lRDcl7rYnPI"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					/>
+				<div className="iframe-container" ref={container}>
+					{showVideo ? (
+						<iframe
+							src="https://www.youtube.com/embed/lRDcl7rYnPI"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						/>
+					) : (
+						undefined
+					)}
 				</div>
-				<div className="iframe-container">
-					<iframe
-						src="https://www.youtube.com/embed/MH_kDlgWLPk"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					/>
+				<div className="iframe-container" ref={container}>
+					{showVideo ? (
+						<iframe
+							src="https://www.youtube.com/embed/MH_kDlgWLPk"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						/>
+					) : (
+						undefined
+					)}
 				</div>
-				<div className="iframe-container">
-					<iframe
-						src="https://www.youtube.com/embed/H5clAuZeZR8"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					/>
+				<div className="iframe-container" ref={container}>
+					{showVideo ? (
+						<iframe
+							src="https://www.youtube.com/embed/H5clAuZeZR8"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						/>
+					) : (
+						undefined
+					)}
 				</div>
 			</div>
 			<div className="third-content">
