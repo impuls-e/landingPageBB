@@ -7,7 +7,7 @@ A Bela Belinda, maior empresa do segmento APLIQUES no Brasil, está com problema
 
 
 ## Solução
-Desenvolvemos uma versão nova da landingpage usando Gatsby, segue abaixo algumas informações sobre as melhorias.
+Desenvolvemos uma versão [nova](https://belabelinda.netlify.com/) da landingpage usando Gatsby, segue abaixo algumas informações sobre as melhorias.
 
 > Informações tiradas do site [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
 
