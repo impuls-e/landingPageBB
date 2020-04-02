@@ -33,7 +33,7 @@ export default function StillDoubts() {
 	}
 	const data = useStaticQuery(graphql`
 		query ImgStillDoubt {
-			image: file(relativePath: { eq: "comparativeBoard.webp" }) {
+			image: file(relativePath: { eq: "comparativeBoard.png" }) {
 				childImageSharp {
 					fluid {
 						...GatsbyImageSharpFluid
