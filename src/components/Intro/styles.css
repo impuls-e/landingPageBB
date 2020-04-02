@@ -63,14 +63,14 @@
 	margin: 0;
 	font-size: 20px;
 	font-weight: 600;
-	line-height: 27px;
+	line-height: 20px;
 	font-family: 'Poppins', sans-serif;
 	background-color: #f4f2ee;
 }
 
 .intro-mobile-content h3 {
 	margin-top: 0px;
-	margin-bottom: 17px;
+	margin-bottom: 10px;
 	font-weight: 300;
 	font-size: 16px;
 	color: black;
