@@ -70,8 +70,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
-				host: 'https://belabelinda.netlify.com/',
-				sitemap: 'https://belabelinda.netlify.com/sitemap.xml',
+				host: 'https://belabelinda.com',
+				sitemap: 'https://belabelinda.com/sitemap.xml',
 				env: {
 					development: {
 						policy: [{ userAgent: '*', disallow: ['/'] }],

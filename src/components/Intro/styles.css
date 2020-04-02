@@ -40,6 +40,7 @@
 	border: none;
 	padding: 10px;
 	font-family: Raleway;
+	cursor: pointer;
 }
 
 .intro-mobile-gif {
@@ -83,7 +84,6 @@
 	letter-spacing: 1px;
 	padding: 10px;
 	display: block;
-	cursor: pointer;
 }
 
 .intro-mobile-content a span {

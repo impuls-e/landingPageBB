@@ -34,7 +34,7 @@ const MobileBackgroundSection = ({}) => (
 						<h1>Descubra Como Ter Cabelos Longos e Volumosos em 30 Segundos</h1>
 						<p>Sem Grampos, Sem Cola, Sem Danos ❤️</p>
 
-						<a href="/">
+						<a href="https://belabelinda.com/collections/frontpage">
 							{' '}
 							<button>ESCOLHER APLIQUE! </button>{' '}
 						</a>
