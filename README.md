@@ -2,11 +2,11 @@
 <h1 align="center">BelaBelinda</h1>
 <p align="center">Projeto de criação de uma <strong>LANDING PAGE </strong> para a empresa BelaBelinda</p>
 
-#Descrição
+## Descrição
 A Bela Belinda, maior empresa do segmento APLIQUES no Brasil, está com problemas no carregamento de suas landing pages que trazem usuários para os seus sites. Atualmente a página deles, [BelaBelinda](https://belabelinda.com/pages/aplique-belabelinda ), conta com um carregamento bem abaixo para os padrões da empresa.
 
 
-#Solução
+## Solução
 Desenvolvemos uma versão nova da landingpage usando Gatsby, segue abaixo algumas informações sobre as melhorias.
 
 > Informações tiradas do site [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
@@ -20,6 +20,10 @@ Segue abaixo prints comparativos da página que não foi feita com Gatsby e a qu
 
 PageSpeedTest WordpressLike                              |  PageSpeedTest Gatsby
 :-------------------------------------------------------:|:----------------------------------------------------:
-(./src/images/static/pagespeedtest-after.png)            |  (./src/images/pagespeedtest-before.png)
+<img src="./src/images/static/pagespeedtest-after.png" align="center"/>   |  <img src="./src/images/pagespeedtest-before.png" align="center"/>
 
+
+###LINKS
+[PageSpeedTest WordpressLike](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbelabelinda.com%2Fpages%2Faplique-belabelinda)
+[PageSpeedTest Gatsby](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbelabelinda.netlify.com%2F)
 
