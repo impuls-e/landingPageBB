@@ -20,7 +20,7 @@ Segue abaixo prints comparativos da página que não foi feita com Gatsby e a qu
 
 PageSpeedTest WordpressLike                              |  PageSpeedTest Gatsby
 :-------------------------------------------------------:|:----------------------------------------------------:
-<img src="./src/images/static/pagespeedtest-after.png" align="center"/>   |  <img src="./src/images/pagespeedtest-before.png" align="center"/>
+<img src="./src/images/static/pagespeedtest-before.png" align="center"/>   |  <img src="./src/images/static/pagespeedtest-after.png" align="center"/>
 
 
 ###LINKS
