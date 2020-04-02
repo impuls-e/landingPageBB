@@ -7,24 +7,24 @@ import './styles.css'
 export default function StepByStep() {
 	const data = useStaticQuery(graphql`
 		query {
-			step1: file(relativePath: { eq: "step1.webp" }) {
+			step1: file(relativePath: { eq: "step1.png" }) {
 				childImageSharp {
 					fluid(maxWidth: 350, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+						...GatsbyImageSharpFluid
 					}
 				}
 			}
-			step2: file(relativePath: { eq: "step2.webp" }) {
+			step2: file(relativePath: { eq: "step2.png" }) {
 				childImageSharp {
 					fluid(maxWidth: 350, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+						...GatsbyImageSharpFluid
 					}
 				}
 			}
-			step3: file(relativePath: { eq: "step3.webp" }) {
+			step3: file(relativePath: { eq: "step3.png" }) {
 				childImageSharp {
 					fluid(maxWidth: 350, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+						...GatsbyImageSharpFluid
 					}
 				}
 			}
