@@ -12,10 +12,10 @@ const MobileBackgroundSection = ({}) => (
 	<StaticQuery
 		query={graphql`
 			query {
-				desktop: file(relativePath: { eq: "intro.webp" }) {
+				desktop: file(relativePath: { eq: "intro.png" }) {
 					childImageSharp {
 						fluid(quality: 90, maxWidth: 1920) {
-							...GatsbyImageSharpFluid_withWebp
+							...GatsbyImageSharpFluid
 						}
 					}
 				}
