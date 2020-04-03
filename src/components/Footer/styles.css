@@ -128,7 +128,8 @@
 	.footer .contact {
 		display: flex;
 		flex-direction: row;
-		padding-top: 30px;
+
+		padding: 25px 90px;
 	}
 	.footer .contact .section {
 		width: 33%;
@@ -168,12 +169,11 @@
 		padding: 0 24px;
 		margin: 10px auto;
 	}
-}
-@media (min-width: 768px) {
+	.footer .cred-card .gatsby-image-wrapper {
+		max-width: 500px;
+	}
+
 	.footer .button {
 		margin: 30px 90px 60px;
-	}
-	.footer .contact {
-		padding: 25px 90px;
 	}
 }

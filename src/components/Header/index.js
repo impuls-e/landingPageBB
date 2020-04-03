@@ -83,20 +83,6 @@ export default function Header() {
 					<div className="lastcolumn">
 						<div className="login-desktop">
 							<a href="https://www.belabelinda.com/account/login">Entrar</a>
-							<select
-								className="currency-picker"
-								name="currencies"
-								data-default-shop-currency="BRL"
-							>
-								<option defaultValue="BRL">BRL</option>
-								<option value="INR">INR</option>
-								<option value="GBP">GBP</option>
-								<option value="CAD">CAD</option>
-								<option value="USD">USD</option>
-								<option value="AUD">AUD</option>
-								<option value="EUR">EUR</option>
-								<option value="JPY">JPY</option>
-							</select>
 						</div>
 						<div className="carrinho">
 							<a href="https://belabelinda.com/cart" className="cart">
