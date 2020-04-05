@@ -102,6 +102,12 @@ module.exports = {
 				dataLayerName: 'YOUR_DATA_LAYER_NAME',
 			},
 		},
+		{
+			resolve: `gatsby-plugin-facebook-pixel`,
+			options: {
+				pixelId: '2163214293791353',
+			},
+		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
