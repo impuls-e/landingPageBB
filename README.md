@@ -22,8 +22,22 @@ PageSpeedTest WordpressLike                              |  PageSpeedTest Gatsby
 :-------------------------------------------------------:|:----------------------------------------------------:
 <img src="./src/images/static/pagespeedtest-before.png" align="center"/>   |  <img src="./src/images/static/pagespeedtest-after.png" align="center"/>
 
+## Production
+
+OBS: Recomendo dar uma lida sobre Gatsby antes de mergulhar direto no projeto. No final deste documento tem um link para Quick Start do GatbsyJS.
+
+Para rodar o projeto localmente, após clonar esse repositório, você deve entrar na pasta raiz do projeto e rodar os comandos:
+
+Instalar as bibliotecas & dependências do projeto:
+yarn install
+
+Subir um servidor local:
+gatsby develop
+
 
 ### LINKS
+
+[Gatsby Quick Start](https://www.gatsbyjs.org/docs/quick-start/) 
 
 [PageSpeedTest WordpressLike](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbelabelinda.com%2Fpages%2Faplique-belabelinda)
 
